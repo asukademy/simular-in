@@ -1,0 +1,14 @@
+util.print: Use console.log instead
+workaround {
+  display: none;
+}
+table.plans tbody th.grey {
+  background: #dddddd;
+  color: #333;
+}
+table.plans thead th,
+table.plans thead td,
+table.plans tbody th,
+table.plans tbody td {
+  vertical-align: middle;
+}

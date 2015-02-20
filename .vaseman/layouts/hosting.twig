@@ -1,0 +1,15 @@
+{% extends 'default-page.twig' %}
+
+{% block submenu %}
+    <div class="uk-width-medium-1-4 uk-container-center">
+        {% include 'sub-menu.twig' with {'menu': 'hosting'} %}
+    </div>
+{% endblock %}
+
+{% block article_footer %}
+    <hr />
+
+    <p class="uk-text-center">
+        任何問題歡迎 <a href="{{ uri.base }}manager/submitticket.php">填寫表單</a> 洽詢
+    </p>
+{% endblock %}

@@ -19,6 +19,7 @@
         @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500);
     </style>
     <link href="{{ uri.media }}css/main.css" rel="stylesheet">
+    <link href="{{ uri.media }}css/skycastle.css" rel="stylesheet">
 
     <meta name="description" content="{{ config.meta.desc }}">
     <meta name="generator" content="The Time Machine">
@@ -73,27 +74,41 @@
                 </a>
             </li>
 
-            <li class="{{ path[0] == 'plan.twig' ? 'uk-active' : '' }}">
-                <a href="{{ uri.base }}plan.html">
+            <li class="{{ path[0] == 'hosting' ? 'uk-active' : '' }}" data-uk-dropdown>
+                <a href="{{ uri.base }}hosting/jp-host.html">
                     <span class="menu-item-title">主機規格</span>
                 </a>
+
+                <div class="uk-dropdown uk-dropdown-navbar">
+                    <ul class="uk-nav uk-nav-navbar">
+                        {#<li class="uk-nav-header">虛擬主機</li>#}
+                        <li class="{{ path[1] == 'tw-host.twig' ? 'uk-active' : '' }}">
+                            <a href="{{ uri.base }}hosting/tw-host.html">台灣 SSD 虛擬主機</a>
+                        </li>
+                        <li class="{{ path[1] == 'jp-host.twig' ? 'uk-active' : '' }}">
+                            <a href="{{ uri.base }}hosting/jp-host.html">東京 SSD 虛擬主機</a>
+                        </li>
+                        <li class="{{ path[1] == 'us-host.twig' ? 'uk-active' : '' }}">
+                            <a href="{{ uri.base }}hosting/us-host.html">美國 SSD 虛擬主機</a>
+                        </li>
+                        <li class="{{ path[1] == 'sg-host.twig' ? 'uk-active' : '' }}">
+                            <a href="{{ uri.base }}hosting/sg-host.html">新加坡 SSD 虛擬主機</a>
+                        </li>
+                        {#<li class="uk-nav-divider"></li>#}
+                        {#<li><a href="#">Separated item</a></li>#}
+                    </ul>
+                </div>
             </li>
 
             <li class="{{ path[0] == 'order.twig' ? 'uk-active' : '' }}">
-                <a href="{{ uri.base }}order.html">
-                    <span class="menu-item-title">註冊</span>
+                <a href="{{ uri.base }}manager/clientarea.php?action=products">
+                    <span class="menu-item-title">管理區</span>
                 </a>
             </li>
 
             <li class="{{ path[0] == 'contact.twig' ? 'uk-active' : '' }}">
-                <a href="{{ uri.base }}contact.html">
+                <a href="{{ uri.base }}manager/submitticket.php">
                     <span class="menu-item-title">聯絡我們</span>
-                </a>
-            </li>
-
-            <li class="">
-                <a href="http://cpanel.skycastle.in" target="_blank">
-                    <span class="menu-item-title">登入</span>
                 </a>
             </li>
         </ul>
