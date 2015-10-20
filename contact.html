@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="media/images/favicon.ico" />
+
+    <title>聯絡我們 | SkyCastle 天空之城虛擬主機</title>
+
+    <!-- Uikit core CSS -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.15.0/css/uikit.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Oswald:300,400,300,700);
+        @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+        @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500);
+    </style>
+    <link href="media/css/main.css" rel="stylesheet">
+    <link href="media/css/skycastle.css" rel="stylesheet">
+
+    <meta name="description" content="">
+    <meta name="generator" content="The Time Machine">
+
+    <meta property="og:title" content="聯絡我們 | SkyCastle 天空之城虛擬主機">
+    <meta property="og:site_name" content="SkyCastle 天空之城虛擬主機">
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/js/jquery.js"></script>
+    <script src="media/js/form.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.15.0/js/uikit.min.js"></script>
+                
+                                                    
+    </head>
+<body class="">
+<nav id="header" class="uk-navbar uk-navbar-attached">
+    <div class="uk-container uk-container-center">
+
+        <a id="big-logo" class="uk-navbar-brand uk-hidden-small" href="./">
+            <img src="media/images/logo/skycastle-logo.png" alt="SkyCastle 天空之城" />
+        </a>
+
+        <a href="#" class="uk-navbar-toggle uk-visible-small" data-uk-toggle="{target:'#mainmenu', cls: 'uk-hidden-small'}"></a>
+
+        <a id="small-logo" class="uk-navbar-brand uk-navbar-center uk-visible-small" href="./">
+            <img src="media/images/logo/skycastle-logo.png" alt="SkyCastle 天空之城" />
+        </a>
+
+        <ul id="mainmenu" class="uk-navbar-nav uk-float-right uk-hidden-small">
+            <li class="">
+                <a href="./about.html">
+                    <span class="menu-item-title">關於我們</span>
+                </a>
+            </li>
+
+            <li class="" data-uk-dropdown>
+                <a href="./hosting/jp-host.html">
+                    <span class="menu-item-title">主機規格</span>
+                </a>
+
+                <div class="uk-dropdown uk-dropdown-navbar">
+                    <ul class="uk-nav uk-nav-navbar">
+                                                <li class="">
+                            <a href="./hosting/tw-host.html">台灣 SSD 虛擬主機</a>
+                        </li>
+                        <li class="">
+                            <a href="./hosting/jp-host.html">東京 SSD 虛擬主機</a>
+                        </li>
+                        <li class="">
+                            <a href="./hosting/us-host.html">美國 SSD 虛擬主機</a>
+                        </li>
+                        <li class="">
+                            <a href="./hosting/sg-host.html">新加坡 SSD 虛擬主機</a>
+                        </li>
+                                                                    </ul>
+                </div>
+            </li>
+
+            <li class="">
+                <a href="./manager/clientarea.php?action=products" target="_blank">
+                    <span class="menu-item-title">管理區</span>
+                </a>
+            </li>
+
+            <li class="uk-active">
+                <a href="./manager/submitticket.php">
+                    <span class="menu-item-title">聯絡我們</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<section id="banner">
+    <div class="banner-inner">
+            <div class="uk-container uk-container-center banner-inner-title">
+        <h1>聯絡我們</h1>
+    </div>
+    </div>
+</section>
+
+<div id="main-body">
+        <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+            
+            <div class="uk-width-medium-3-4 uk-container-center">
+                <article class="article-content">
+                    
+
+<div id="messages"></div>
+
+<h2>填寫聯絡表單</h2>
+
+<p>
+    若主機使用有任何問題，歡迎由此聯絡我們處理。也可由此回報主機濫用或不法行為。
+</p>
+
+<form id="contact-us" class="uk-form" enctype="application/x-www-form-urlencoded" action="http://api.skycastle.in/v-2/contact-form" method="post">
+    <div class="cl">
+        <table width="52%" class="contactff order">
+            <tr>
+                <td class="fright w90">Email</td>
+                <td><input name="author_email" id="api_author_email" type="text" value=""/></td>
+            </tr>
+            <tr>
+                <td class="fright w90">姓名</td>
+                <td><input name="author_name" id="api_author_name" type="text" value=""/></td>
+            </tr>
+            <tr>
+                <td class="fright w90">主旨</td>
+                <td><input name="subject" id="api_subject" type="text" value=""/></td>
+            </tr>
+            <tr>
+                <td class="fright">訊息</td>
+                <td><textarea style="width: 100%; height: 250px;" name="content" id="api_content"></textarea></td>
+            </tr>
+            <tr>
+                <td class="fright">&nbsp;</td>
+                <td><br>
+                    <b>輸入您所看見的驗證碼</b><br>
+                    <br>
+                    <img alt="captcha" src="http://api.skycastle.in/captcha" id="captcha-image"><br>
+                    <br></td>
+            </tr>
+            <tr>
+                <td class="fright">輸入驗證碼</td>
+                <td><input name="captcha" id="api_captcha" type="text" id="api_captcha"/></td>
+            </tr>
+            <tr>
+                <td class="fright">&nbsp;</td>
+                <td><span class="fright">
+                                <button type="submit" class="button_singup r5 button_r uk-button uk-button-primary">送出</button>
+                                </span></td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+    </div>
+</form>
+                                    </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="uk-container uk-container-center uk-text-center">
+
+        <div class="footer-logo">
+            <a href="#" data-uk-smooth-scroll>
+                                <img width="300" src="media/images/logo/skycastle-logo.png" alt="SkyCastle 天空之城" />
+            </a>
+        </div>
+
+                    
+            
+                    
+        <p>
+            Copyright &copy; 2015 SkyCastle. All Rights Reserved.
+        </p>
+        <p class="back">
+            <a href="#" data-uk-smooth-scroll><span class="uk-icon-chevron-up"></span> Back to Top</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59448570-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
